@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------- Navbar-------------------------  */
+.navbar {
+    background-color: black;
+    color: #fff;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.5rem;
+}
+
+.navbar .menu {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* To avoid wrapping of text specially links like sign up etc  */
+.navbar a {
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+.navbar a:hover {
+    color: rgb(25, 230, 140);
+
+}
+
+/* but not change color  of for logo with text  */
+.navbar .logo:hover {
+    color: #fff;
+
+}
+
+/* ------------------------------------ Hero section 1 --------------------------------  */
+.hero-sec1 {
+    background-color: rgb(25, 230, 140);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* to cross axis: row wise this time bcz direction is column */
+    gap: 1.5rem;
+
+    padding: 100px 15px 104px;
+
+}
+
+
+/* to put img (logo type) in the screen of laptop image  */
+.hero-sec1 .laptop-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-img #laptop-screen {
+    position: relative;
+    width: 10rem;
+}
+
+.laptop-img #laptop-content {
+    position: absolute;
+    /* to put it actually  in the center of laptopn screen */
+
+    border: 2px solid rgb(25, 230, 140);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* place img in center of its border just above (#laptop-content) */
+.laptop-img #laptop-content img {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    /* increase size of img : small img inside laptop  */
+    width: 15px;
+
+}
+
+.hero-sec1 h1 {
+    font-weight: 700;
+    color: #111010;
+    /* Darker shade of black */
+    text-align: center;
+    /* when smaller screens then wrap to next line but in center */
+}
+
+.hero-sec1 p {
+    font-weight: 500;
+    color: #111010;
+    /* Darker shade of black */
+    text-align: center;
+}
+
+.hero-sec1 .ms {
+    width: 18rem;
+}
+
+.hero-sec1 .ms:hover {
+    transition: transform .5s ease;
+    /* apply smoothly the below transform property */
+
+    transform: translateY(-5px);
+    /* move 5px towards top on hover */
+}
+
+
+.hero-sec1 a {
+    color: black;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero-sec1 a:hover {
+    color: black;
+    /* otherwise it changes to blue on hover bydefault */
+}
+
+/* -------------------------------------------------- Hero section 2----------------------------  */
+.hero-sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 80px 0;
+    gap: 1rem;
+}
+
+.hero-sec2 h1 {
+    /* same as hero-sec1's h1 element  */
+    font-weight: 700;
+    color: #111010;
+    /* Darker shade of black */
+    text-align: center;
+}
+
+.hero-sec2 p {
+    /* same as hero-sec1's p element  */
+    font-weight: 500;
+    color: #111010;
+    /* Darker shade of black */
+    text-align: center;
+}
+
+/* download links  */
+.hero-sec2 .download-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.hero-sec2 .download-links img {
+    width: 130px;
+}
+
+
+
+/* ------------------------------------------------- Hero section 3------------------  */
+.hero-sec3 {
+    background-color: #222326;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 60px 0 70px 0;
+
+}
+
+.hero-sec3 img {
+    width: 30rem;
+}
+
+.hero-sec3 h1 {
+    font-weight: 750;
+    text-align: center;
+}
+
+/* ----<ul> : change the color of links inside li to green, first 3 devices to white with  list-style color to green -------- */
+.hero-sec3 .devices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin: 0 10px;
+}
+
+.hero-sec3 .devices li {
+    font-weight: 500;
+    color: #1DB954;
+}
+
+/* remove list-style of 'MOBILE' */
+.hero-sec3 .devices #MOBILE {
+    list-style-type: none;
+}
+
+.hero-sec3 .devices li a {
+    color: #1DB954;
+}
+
+/* darker on hover  */
+.hero-sec3 .devices li a:hover {
+    color: #1db95498;
+}
+
+.hero-sec3 .devices #mobile,
+#computer,
+#tablet {
+    color: #fff;
+    /* to make them along with <li>'s list-style (disc) -> Not in next line*/
+    display: inline;
+}
+
+
+
+
+/* ------------------------------------------------- Footer -------------------------------------- .end { */
+.footer{ 
+    display: flex;
+    align-items: start;  /* bring to top (cross axis ) */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    background-color: black;
+    padding: 80px 0 20px 0;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .links{
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* x-axis (cross axis is x-axis) */
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.footer .links h6{
+    white-space: nowrap;  /* not come in 2nd line on decreasing dimension size of screen */
+    color: #51545c;
+    font-weight: 500;
+}
+
+.footer .links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .links a:hover{
+    color:#1DB954;
+}
+
+
+/* ----------------------------------------------- Copyright and links section ----------------------------  */
+.copyright-links{
+    background-color: black;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1.8rem;
+}
+
+.copyright-links .copyright{
+    color: #51545c;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.copyright-links .links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.copyright-links .links a{
+    color: #51545c;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: 400;
+}
+.copyright-links .links a:hover{
+    color: #1DB954;
+}
+
+
+
+
+/* -----------------------------------------------------------------------------------------  */
+/* -----------------------------------------Responsiveness --------------------------------  */
+
+
+/* ------------------------- All screens below lg screens ( lg >= 992px) ---------------- */
+@media only screen and (max-width: 1000px) {
+
+    /* ------------------- navbar ----------------------  */
+
+    /* make links hidden for smaller screens (open by clicking on menu icon - sidebar (job of JS)) */
+    .navbar .options {
+        display: none;
+    }
+
+    /* --------------------- hero section3:------------------  */
+
+    /* Make the .devices section's last 2 elements wrap to 2nd line  */
+    .hero-sec3 .devices {
+        flex-wrap: wrap;
+    }
+
+    .hero-sec3 .devices li {
+        font-weight: 600;
+        /* so that wrap faster when go below 1000px */
+    }
+
+
+    
+}
+
+
+/* ---------------------------------------- devices(mobile) below width 750px (nearly below breakpoint md (>=768px)-----------------------  */
+@media only screen and (max-width: 750px) {
+
+
+    /* --------------------- hero section3:------------------  */
+
+    /* Make the .devices section's elements in column wise  */
+    .hero-sec3 .devices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* remove list style  */
+    .hero-sec3 .devices li {
+        list-style: none;
+    }
+
+    
+    /* -------------------------------------- Footer -------------------  */
+
+     /* To make all elements of .footer in cole line each with 1st (logo) at begining*/
+     .footer{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+    /* SAME AS ABOVE <= 1000px width   */
+    .logo {
+        align-self: flex-start;          /* flex-item property, hifgest priority to plce in main axis of flex-container */
+        margin-left: 1rem;
+    }
+ 
+    .footer .links {
+        /* already displayed as flex with direction column  */
+        align-items: center;
+    }
+
+    .footer .links h6{
+        font-weight: 700;
+        font-size: 1.2rem;
+    } 
+    
+}
+
+
+
+/* ---------------------------------- Devuices below 500px width ---------------------------  */
+@media only screen and (max-width: 500px) {
+    /* -------------------- nav bar ------------------  */
+    .navbar .menu {
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+    
+    /* --------------------- hero section 1:- -----------------  */
+
+    .hero-sec1 .ms {
+        width: 11rem;
+        /* mAKE img smaller having class .ms (Git it from MICROSOFT-screen) */
+    }
+
+    /* --------------------- hero section3:------------------  */
+
+    /* make its first img smaller  */
+    .hero-sec3 img {
+        width: 11rem;
+    }
+
+
+    /* --------------------- copyright ------------------------  */
+    .copyright-links .copyright{
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width:250px){
+    /* --------------------- copyright ------------------------  */
+    .copyright-links .copyright{
+        font-weight: 400;
+        font-size: 10px;
+    }
+}
